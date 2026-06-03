@@ -73,11 +73,11 @@ export default function About() {
               <AccordionTrigger className="hover:no-underline">
                 <div className="flex flex-col items-start gap-0.5 text-left">
                   <span className="text-foreground font-medium">{item.company}</span>
-                  <span className="text-sm text-muted-foreground">{item.role} · {item.period}</span>
+                  <span className="text-sm text-muted-foreground font-mono">{item.role} · {item.period}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                <p className="text-muted-foreground leading-relaxed">{item.description}</p>
               </AccordionContent>
             </AccordionItem>
           ))}

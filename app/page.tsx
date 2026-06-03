@@ -1,7 +1,7 @@
 import Link from "next/link";
 import PageWrapper from "@/components/PageWrapper";
-import { Separator } from "@/components/ui/separator";
 import { caseStudies } from "@/lib/case-studies";
+import WorkListItem from "@/components/WorkListItem";
 
 export default function Home() {
   const featured = caseStudies.slice(0, 4);
@@ -17,33 +17,16 @@ export default function Home() {
         </p>
       </section>
 
-      <Separator className="my-10" />
+      <div className="my-10" />
 
-      <section className="space-y-6">
-        <h2 className="text-sm font-medium uppercase tracking-widest text-muted-foreground">
-          Selected Work
-        </h2>
-        <ul className="space-y-4">
+      <section>
+        <ul className="space-y-2">
           {featured.map((study) => (
             <li key={study.slug}>
-              <Link
-                href={`/work/${study.slug}`}
-                className="group flex items-baseline justify-between"
-              >
-                <span className="text-foreground">{study.title}</span>
-                <span className="text-sm text-muted-foreground">
-                  {study.year}
-                </span>
-              </Link>
+              <WorkListItem href={`/work/${study.slug}`} title={study.title} year={study.year} />
             </li>
           ))}
         </ul>
-        <Link
-          href="/work"
-          className="inline-block text-sm text-muted-foreground"
-        >
-          View all work →
-        </Link>
       </section>
     </PageWrapper>
   );

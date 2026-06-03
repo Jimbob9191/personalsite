@@ -54,7 +54,7 @@ function AccordionContent({
   return (
     <AccordionPrimitive.Panel
       data-slot="accordion-content"
-      className="h-(--accordion-panel-height) overflow-hidden text-sm transition-[height] duration-300 ease-in-out data-starting-style:h-0 data-ending-style:h-0"
+      className="h-(--accordion-panel-height) overflow-hidden text-base transition-[height] duration-300 ease-in-out data-starting-style:h-0 data-ending-style:h-0"
       {...props}
     >
       <div

@@ -73,7 +73,7 @@ export default function CaseStudyBlock({ block }: { block: Block }) {
           {block.items.map(({ label, value }) => (
             <li key={label} className="flex items-baseline justify-between">
               <span className="text-sm text-muted-foreground">{label}</span>
-              <span className="text-sm text-foreground">{value}</span>
+              <span className="text-sm text-foreground font-mono">{value}</span>
             </li>
           ))}
         </ul>

@@ -32,7 +32,7 @@ export default async function CaseStudyPage({
       <section className="space-y-4">
         <div className="flex items-baseline justify-between">
           <h1 className="text-2xl font-medium text-foreground">{study.title}</h1>
-          <span className="text-sm text-muted-foreground">{study.year}</span>
+          <span className="text-sm text-muted-foreground font-mono">{study.year}</span>
         </div>
         <p className="text-muted-foreground leading-relaxed">{study.summary}</p>
         <div className="flex flex-wrap gap-2">
