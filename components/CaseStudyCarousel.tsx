@@ -54,7 +54,7 @@ export function CaseStudyCarousel({ images, caption }: Props) {
           {images.map((img, index) => (
             <CarouselItem key={index}>
               <ImageLightbox src={img.src} alt={img.alt} className="block w-full cursor-zoom-in">
-                <div className="relative aspect-video w-full overflow-hidden rounded-lg bg-muted">
+                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-muted">
                   <Image
                     src={img.src}
                     alt={img.alt}
