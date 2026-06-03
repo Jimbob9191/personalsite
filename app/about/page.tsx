@@ -12,7 +12,7 @@ const experience = [
     period: "December 2025 – Present",
     company: "Foundation Health",
     role: "UX/UI Designer",
-    description: "Text goes here",
+    description: "Designing patient and client-facing products from zero to one, leading design on key products across rapid iteration cycles, prototyping web tools and interfaces, design system work and brand development.",
   },
   {
     period: "April 2024 – December 2025",
