@@ -1,5 +1,4 @@
 import PageWrapper from "@/components/PageWrapper";
-import { Separator } from "@/components/ui/separator";
 
 const links = [
   { label: "Email", href: "mailto:jamesmolyneuxbirch@gmail.com", display: "jamesmolyneuxbirch@gmail.com" },
@@ -16,8 +15,6 @@ export default function Contact() {
           I'm always open to new projects, contract work and interesting conversations. The best way to reach me is via email.
         </p>
       </section>
-
-      <Separator className="my-10" />
 
       <ul className="space-y-4">
         {links.map(({ label, href, display }) => (
