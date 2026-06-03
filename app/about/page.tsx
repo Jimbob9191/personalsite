@@ -67,7 +67,7 @@ export default function About() {
       </section>
 
       <section className="mt-10">
-        <Accordion type="single" collapsible className="w-full">
+        <Accordion className="w-full">
           {experience.map((item) => (
             <AccordionItem key={`${item.company}-${item.role}`} value={`${item.company}-${item.role}`}>
               <AccordionTrigger className="hover:no-underline">
