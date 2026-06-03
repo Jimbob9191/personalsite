@@ -2,9 +2,9 @@ import PageWrapper from "@/components/PageWrapper";
 import { Separator } from "@/components/ui/separator";
 
 const links = [
-  { label: "Email", href: "mailto:hello@yourname.com", display: "hello@yourname.com" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/yourname", display: "linkedin.com/in/yourname" },
-  { label: "Read.cv", href: "https://read.cv/yourname", display: "read.cv/yourname" },
+  { label: "Email", href: "mailto:jamesmolyneuxbirch@gmail.com", display: "jamesmolyneuxbirch@gmail.com" },
+  { label: "Linkedin", href: "https://www.linkedin.com/in/jamesmolyneuxbirch/", display: "linkedin.com/in/jamesmolyneuxbirch" },
+  { label: "Dribbble", href: "https://dribbble.com/jamesmolyneuxbirch", display: "dribbble.com/jamesmolyneuxbirch" },
 ];
 
 export default function Contact() {
@@ -13,8 +13,7 @@ export default function Contact() {
       <section className="space-y-4">
         <h1 className="text-2xl font-medium text-foreground">Contact</h1>
         <p className="text-muted-foreground leading-relaxed">
-          Open to new projects, contract work, and interesting conversations.
-          The best way to reach me is by email.
+          I'm always open to new projects, contract work and interesting conversations. The best way to reach me is via email.
         </p>
       </section>
 

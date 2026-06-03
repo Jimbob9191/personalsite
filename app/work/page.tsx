@@ -10,7 +10,7 @@ export default function Work() {
       <section className="space-y-4">
         <h1 className="text-2xl font-medium text-foreground">Work</h1>
         <p className="text-muted-foreground leading-relaxed">
-          A selection of projects from the past few years.
+          A limited selection of the work i've created over the past few years.
         </p>
       </section>
 

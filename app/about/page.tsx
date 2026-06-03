@@ -49,18 +49,18 @@ export default function About() {
     <PageWrapper>
       <section className="space-y-4">
         <h1 className="text-2xl font-medium text-foreground">About</h1>
-        <p className="text-foreground leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed">
           Hey, I&apos;m James - a UX/UI designer with over five years of
           experience across fintech, healthcare, and ecommerce, working with
           both early-stage startups and established brands.
         </p>
-        <p className="text-foreground leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed">
           I care about design that earns trust: the kind that gets out of the
           way and lets people do what they actually came to do. Currently
           designing at Foundation Health, previously at Pavers Shoes and coeo.
           Open to well-considered problems at companies that care about craft.
         </p>
-        <p className="text-foreground leading-relaxed">
+        <p className="text-muted-foreground leading-relaxed">
           Outside of work I&apos;m usually shooting photos, playing games, or
           playing with whatever AI tool just dropped.
         </p>

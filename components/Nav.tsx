@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 
 const links = [
@@ -12,10 +13,15 @@ const links = [
 
 export default function Nav() {
   const pathname = usePathname();
+  const ref = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    ref.current?.classList.add("is-shown");
+  }, []);
 
   return (
-    <nav className="fixed top-4 left-1/2 z-50 -translate-x-1/2">
-      <div className="flex items-center gap-1 rounded-full border border-border/40 bg-background/60 px-3 py-2 backdrop-blur-md shadow-sm">
+    <nav ref={ref} className="fixed top-4 left-1/2 z-50 -translate-x-1/2 t-stagger">
+      <div className="t-stagger-line flex items-center gap-1 rounded-full border border-border/40 bg-background/60 px-3 py-2 backdrop-blur-md shadow-sm">
         {links.map(({ href, label }) => (
           <Link
             key={href}
