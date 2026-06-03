@@ -4,16 +4,16 @@ import { Separator } from "@/components/ui/separator";
 import { caseStudies } from "@/lib/case-studies";
 
 export default function Home() {
-  const featured = caseStudies.slice(0, 2);
+  const featured = caseStudies.slice(0, 4);
 
   return (
     <PageWrapper>
       <section className="space-y-4">
-        <h1 className="text-2xl font-medium text-foreground">Your Name</h1>
+        <h1 className="text-2xl font-medium text-foreground">James Molyneux-Birch</h1>
         <p className="text-muted-foreground leading-relaxed">
-          UX/UI Designer based in London. I work on product design — from early
-          research to shipped interfaces. Currently at{" "}
-          <span className="text-foreground">Studio Name</span>.
+          I&apos;m a UX/UI designer with over 5 years experience delivering
+          digital products. Currently at{" "}
+          <Link href="https://www.foundationhealth.com/" className="text-foreground underline underline-offset-2" target="_blank" rel="noopener noreferrer">Foundation Health</Link>.
         </p>
       </section>
 
