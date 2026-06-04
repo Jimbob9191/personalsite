@@ -2,6 +2,7 @@ import Link from "next/link";
 import PageWrapper from "@/components/PageWrapper";
 import { caseStudies } from "@/lib/case-studies";
 import WorkListItem from "@/components/WorkListItem";
+import { PhotoCarousel } from "@/components/PhotoCarousel";
 
 export default function Home() {
   const featured = caseStudies.slice(0, 4);
@@ -27,6 +28,12 @@ export default function Home() {
             </li>
           ))}
         </ul>
+      </section>
+
+      <div className="my-10" />
+
+      <section>
+        <PhotoCarousel />
       </section>
     </PageWrapper>
   );

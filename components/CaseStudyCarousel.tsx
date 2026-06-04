@@ -11,12 +11,19 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel"
 
+const aspectRatioClasses: Record<string, string> = {
+  landscape: "aspect-[4/3]",
+  portrait: "aspect-[3/4]",
+}
+
 interface Props {
   images: { src: string; alt: string }[]
   caption?: string
+  aspectRatio?: "landscape" | "portrait"
 }
 
-export function CaseStudyCarousel({ images, caption }: Props) {
+export function CaseStudyCarousel({ images, caption, aspectRatio = "landscape" }: Props) {
+  const aspectClass = aspectRatioClasses[aspectRatio]
   const [mainApi, setMainApi] = useState<CarouselApi>()
   const [thumbApi, setThumbApi] = useState<CarouselApi>()
   const [selectedIndex, setSelectedIndex] = useState(0)
@@ -54,7 +61,7 @@ export function CaseStudyCarousel({ images, caption }: Props) {
           {images.map((img, index) => (
             <CarouselItem key={index}>
               <ImageLightbox src={img.src} alt={img.alt} className="block w-full cursor-zoom-in">
-                <div className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-muted">
+                <div className={cn("relative w-full overflow-hidden rounded-lg bg-muted", aspectClass)}>
                   <Image
                     src={img.src}
                     alt={img.alt}
